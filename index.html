@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mini Counter List</title>
+
+  <style>
+
+body {
+  background-color: white;
+  padding: 32px;
+}
+
+.container {
+  background-color: white;
+  padding: 4px;
+  width: 400px;
+  border: 4px solid black;
+}
+
+p {
+  color: black;
+  font-size: 14px;
+}
+
+button {
+  padding: 2px;
+  background-color: #4b6cb7;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-bottom: 30px;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #182848;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  margin-right: 20px;
+  margin-bottom: 20px;
+}
+  </style>
+  
+</head>
+
+<body>
+  <div class="container">
+    <p>total sum: <span id="sum">0</span></p>
+
+    <button type="button" id="addcounter">Add Counter</button>
+
+    <div id="records"></div>
+  </div>
+
+  <!-- ✅ Vite loads TS directly -->
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>
